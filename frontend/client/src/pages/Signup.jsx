@@ -16,7 +16,7 @@ function Signup() {
 
     try {
       // 1. Make the API call
-      await axios.post("https://linkedin-clone-backend-sqvx.onrender.com", {
+      await axios.post("https://linkedin-clone-backend-sqvx.onrender.com/api/posts", {
         name,
         email,
         password,

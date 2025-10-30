@@ -12,7 +12,7 @@ function Home() {
   const fetchPosts = async () => {
     try {
       setLoading(true);
-      const res = await axios.get("https://linkedin-clone-backend-sqvx.onrender.com");
+      const res = await axios.get("https://linkedin-clone-backend-sqvx.onrender.com/api/posts");
       setPosts(res.data);
       setLoading(false);
     } catch (error) {
