@@ -17,7 +17,7 @@ function Login() {
 
     try {
       // 1. Make the API call (thanks to proxy, we just use /api/...)
-      const response = await axios.post('/api/auth/login', {
+      const response = await axios.post("https://linkedin-clone-backend-sqvx.onrender.com", {
         email,
         password,
       });

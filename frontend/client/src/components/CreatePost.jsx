@@ -25,7 +25,7 @@ function CreatePost({ onPostCreated }) {
       };
 
       // 3. Send the post text AND the config
-      await axios.post('/api/posts', { text: post_text }, config);
+      await axios.post("https://linkedin-clone-backend-sqvx.onrender.com", { text: post_text }, config);
 
       set_post_text(''); // Clear the box
       onPostCreated(); // 4. Call the refresh function!
